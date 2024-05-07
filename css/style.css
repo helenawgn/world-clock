@@ -1,6 +1,66 @@
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(245, 239, 249) 30.1%,
+    rgb(207, 211, 236) 100.2%
+  );
+}
+
 h1 {
   text-align: center;
 }
 footer {
   text-align: center;
+
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  padding-top: 30px;
+}
+select {
+  display: block;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+}
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: whitesmoke;
+  padding: 40px;
+  margin: 65px auto 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 8px;
+}
+.city {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+.city:last-child {
+  border: none;
+}
+
+.date {
+  opacity: 0.7;
+}
+
+.time {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 24px;
+  vertical-align: middle;
+  line-height: 48px;
 }
