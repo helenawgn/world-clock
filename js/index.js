@@ -1,8 +1,9 @@
 function updateTime() {
   let kyivElement = document.querySelector("#kyiv");
   let singaporeElement = document.querySelector("#singapore");
+  let londonElement = document.querySelector("#london");
 
-  if (kyivElement && singaporeElement) {
+  if (kyivElement && singaporeElement && londonElement) {
     let kyivDateElement = kyivElement.querySelector(".date");
     let kyivTimeElement = kyivElement.querySelector(".time");
     let kyivTime = moment().tz("Europe/Kiev");
@@ -16,6 +17,14 @@ function updateTime() {
 
     singaporeDateElement.innerHTML = singaporeTime.format("MMMM Do YYYY");
     singaporeTimeElement.innerHTML = singaporeTime.format(
+      "h:mm:ss [<small>]A[</small>]",
+    );
+    let londonDateElement = londonElement.querySelector(".date");
+    let londonTimeElement = londonElement.querySelector(".time");
+    let londonTime = moment().tz("Europe/London");
+
+    londonDateElement.innerHTML = londonTime.format("MMMM Do YYYY");
+    londonTimeElement.innerHTML = londonTime.format(
       "h:mm:ss [<small>]A[</small>]",
     );
   }
