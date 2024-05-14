@@ -6,16 +6,6 @@ body {
   );
 }
 
-h1 {
-  text-align: center;
-}
-footer {
-  text-align: center;
-
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.8);
-  padding-top: 30px;
-}
 select {
   display: block;
   font-size: 18px;
@@ -30,12 +20,16 @@ h1 {
   font-style: normal;
   font-size: 36px;
 }
+h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
 .container {
   max-width: 600px;
-  margin: 60px auto;
+  margin: 45px auto;
   background-color: whitesmoke;
   padding: 40px;
-  margin: 65px auto 0 auto;
+
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 8px;
 }
@@ -63,4 +57,9 @@ h1 {
   font-size: 24px;
   vertical-align: middle;
   line-height: 48px;
+}
+footer {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
 }
